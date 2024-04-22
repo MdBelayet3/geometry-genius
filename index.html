@@ -110,13 +110,16 @@
             <h2 class="card-title">Rhombus</h2>
             <p>Area (A) = 0.5 x d <sub>1</sub> x d <sub>2</sub></p>
             <div>
-              <input class="w-24 text-2xl rounded-lg  bg-gray-200 px-2 placeholder-black " type="text" placeholder="d1">
+              <p class="text-3xl">Area : <span id="rhombus-area"></span> <span>cm <sup>2</sup></span></p>
+            </div>
+            <div>
+              <input id="d1" class="w-24 text-2xl rounded-lg  bg-gray-200 px-2 placeholder-black " type="text" placeholder="d1">
               <span class="mr-4">cm</span>
-              <input class="w-24 text-2xl rounded-lg  bg-gray-200 px-2 placeholder-black" type="text" placeholder="d2">
+              <input id="d2" class="w-24 text-2xl rounded-lg  bg-gray-200 px-2 placeholder-black" type="text" placeholder="d2">
               <span>cm</span>
             </div>
             <div class="card-actions">
-              <button class="btn bg-[#1090D8] w-[200px] text-white text-xl">Calculate</button>
+              <button onclick="rhombusAreaCalculate()" class="btn bg-[#1090D8] w-[200px] text-white text-xl">Calculate</button>
             </div>
           </div>
         </div>
@@ -129,13 +132,16 @@
             <h2 class="card-title">Pentagon</h2>
             <p>Area (A) = 0.5 x p x b</p>
             <div>
-              <input class="w-24 text-2xl rounded-lg  bg-gray-200 px-2 placeholder-black " type="text" placeholder="p">
+              <p class="text-3xl">Area : <span id="pentagon-area"></span> <span>cm <sup>2</sup></span></p>
+            </div>
+            <div>
+              <input id="perimeter" class="w-24 text-2xl rounded-lg  bg-gray-200 px-2 placeholder-black " type="text" placeholder="p">
               <span class="mr-4">cm</span>
-              <input class="w-24 text-2xl rounded-lg  bg-gray-200 px-2 placeholder-black" type="text" placeholder="b">
+              <input id="base" class="w-24 text-2xl rounded-lg  bg-gray-200 px-2 placeholder-black" type="text" placeholder="b">
               <span>cm</span>
             </div>
             <div class="card-actions">
-              <button class="btn bg-[#1090D8] w-[200px] text-white text-xl">Calculate</button>
+              <button onclick="pentagonAreaCalculate()" class="btn bg-[#1090D8] w-[200px] text-white text-xl">Calculate</button>
             </div>
           </div>
         </div>
@@ -148,13 +154,16 @@
             <h2 class="card-title">Ellipse</h2>
             <p>Area (A) = &#x213C;ab</p>
             <div>
-              <input class="w-24 text-2xl rounded-lg  bg-gray-200 px-2 placeholder-black " type="text" placeholder="a">
+              <p class="text-3xl">Area : <span id="ellipse-area"></span> <span>cm <sup>2</sup></span></p>
+            </div>
+            <div>
+              <input id="ellipse-a" class="w-24 text-2xl rounded-lg  bg-gray-200 px-2 placeholder-black " type="text" placeholder="a">
               <span class="mr-4">cm</span>
-              <input class="w-24 text-2xl rounded-lg  bg-gray-200 px-2 placeholder-black" type="text" placeholder="b">
+              <input id="ellipse-b" class="w-24 text-2xl rounded-lg  bg-gray-200 px-2 placeholder-black" type="text" placeholder="b">
               <span>cm</span>
             </div>
             <div class="card-actions">
-              <button class="btn bg-[#1090D8] w-[200px] text-white text-xl">Calculate</button>
+              <button onclick="ellipseAreaCalculate()" class="btn bg-[#1090D8] w-[200px] text-white text-xl">Calculate</button>
             </div>
           </div>
         </div>
@@ -169,6 +178,9 @@
   <script src="js/triangle-calculator.js"></script>
   <script src="js/rectangle-calculator.js"></script>
   <script src="js/parallelogram-calculator.js"></script>
+  <script src="js/rhombus-calculator.js"></script>
+  <script src="js/pentagon-calculator.js"></script>
+  <script src="js/ellipse.calculator.js"></script>
 </body>
 
 </html>
